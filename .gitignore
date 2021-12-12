@@ -1,0 +1,15 @@
+## Modules
+node_modules
+package-lock.json
+
+## Production
+dist
+
+## Setting
+.scannerwork
+.github
+.vscode
+.DS_Store
+
+## Env
+.env.prod

@@ -1,0 +1,7 @@
+@import "@styles/main.scss";
+
+.wrapper {
+	@include layout(row, flex-start, flex-start);
+	width: 100vw;
+	height: 100vh;
+}

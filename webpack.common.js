@@ -4,9 +4,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 module.exports = {
-	entry: "./src/pages/index.js",
+	entry: "./src/pages/index.tsx",
 
 	resolve: {
+		alias: {
+			"@styles": path.join(__dirname, "./src/styles"),
+		},
+		extensions: [".ts", ".tsx", ".js"],
 		fallback: {
 			fs: false,
 		},
